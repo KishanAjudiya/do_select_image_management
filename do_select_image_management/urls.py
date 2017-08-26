@@ -17,8 +17,11 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 from rest_framework.authtoken import views as auth_token
+from django.conf.urls import url, include
+from django.contrib import admin
+from django.conf.urls.static import static
 
-from do_select_image_management import views
+from do_select_image_management import views, settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,3 +31,5 @@ urlpatterns = [
     url(r'^get-all-images/', views.ImageList.as_view()),
     url(r'^images/', views.Images.as_view()),
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
