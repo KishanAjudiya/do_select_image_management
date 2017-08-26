@@ -10,13 +10,18 @@ These instructions will get you a copy of the project up and running on your loc
 ## For Demo click [here](https://radiant-tundra-99837.herokuapp.com/images/):
 
 Username: test
+
 Password: test@123
 
-###Functionality:
+### Functionality:
      1. Get list all images
+     
      2. Upload image
+     
      3. Update existing image
+     
      4. Delete image
+     
      5. Token / Basic Authentication
 
 ### Prerequisites
