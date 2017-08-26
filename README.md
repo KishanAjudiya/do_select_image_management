@@ -1,8 +1,3 @@
-Functionality:
-     1. Get list all all images
-     2. Upload image
-     3. Update existing image
-     4. Delete image
  
 # do_select_image_management
 
@@ -16,6 +11,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 Username: test
 Password: test@123
+
+###Functionality:
+     1. Get list all images
+     2. Upload image
+     3. Update existing image
+     4. Delete image
+     5. Token / Basic Authentication
 
 ### Prerequisites
 
