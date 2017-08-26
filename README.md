@@ -1,5 +1,5 @@
  
-# do_select_image_management
+#  REST Image Management
 
 Rest based APIs to server image management for any platform.
 
