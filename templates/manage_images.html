@@ -43,7 +43,8 @@
         var request = $.ajax({
             url: "/manage-image/",
             method: "DELETE",
-            data: data
+            data: data,
+            headers: { 'AUTHORIZATION': 'Token b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
         });
 
         request.done(function(msg) {
@@ -79,7 +80,8 @@
         var request = $.ajax({
             url: "/manage-image/",
             method: "POST",
-            data: data
+            data: data,
+            headers: { 'AUTHORIZATION': 'Token b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
         });
 
         request.done(function(msg) {
@@ -101,7 +103,8 @@ var data = {
         var request = $.ajax({
             url: "/manage-image/",
             method: "PUT",
-            data: data
+            data: data,
+            headers: { 'AUTHORIZATION': 'Token b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
         });
 
         request.done(function(msg) {
@@ -122,7 +125,8 @@ var data = {
     $(function() {
         var request = $.ajax({
             url: "/get-all-images",
-            method: "GET"
+            method: "GET",
+            headers: { 'AUTHORIZATION': 'Token b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
         });
 
         request.done(function(data) {
