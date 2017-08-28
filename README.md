@@ -70,6 +70,24 @@ For running the Project:
 ```
 python manage.py runserver 0.0.0.0:8000
 ```
+For accessing all the APIs, you need API key. It should be present in the header as following:
+
+```
+Api-Key : KEY API_KEY_VALUE
+```
+
+You can generate API key using following command :
+
+```
+python manage.py create_api_key
+```
+It will ask for username and password. 
+
+If you are not registered user, you can register with following command : 
+
+```
+python manage.py create_user
+```
 
 Now you can access it form here
 

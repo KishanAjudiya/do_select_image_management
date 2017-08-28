@@ -24,7 +24,7 @@ SECRET_KEY = '0obo=v486qev_a&(lyet79o0vjr@wrk@lhmu+qd21lv62!1rki'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    'do_select_image_management'
+    'do_select_image_management',
+    'corsheaders',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -104,11 +105,27 @@ AUTH_PASSWORD_VALIDATORS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
+        'do_select_image_management.management.custom_authentication.APIAuthentication',
     )
 }
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
+
+CORS_ALLOW_HEADERS = (
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'agent-code',
+    'source-code',
+    'agent-token',
+    'api-key'
+)
 
 LANGUAGE_CODE = 'en-us'
 

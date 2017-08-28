@@ -44,7 +44,7 @@
             url: "/manage-image/",
             method: "DELETE",
             data: data,
-            headers: { 'AUTHORIZATION': 'Token b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
+            headers: { 'Api-Key': 'KEY b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
         });
 
         request.done(function(msg) {
@@ -81,7 +81,7 @@
             url: "/manage-image/",
             method: "POST",
             data: data,
-            headers: { 'AUTHORIZATION': 'Token b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
+            headers: { 'Api-Key': 'KEY b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
         });
 
         request.done(function(msg) {
@@ -104,7 +104,7 @@ var data = {
             url: "/manage-image/",
             method: "PUT",
             data: data,
-            headers: { 'AUTHORIZATION': 'Token b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
+            headers: { 'Api-Key': 'KEY b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
         });
 
         request.done(function(msg) {
@@ -126,7 +126,7 @@ var data = {
         var request = $.ajax({
             url: "/get-all-images",
             method: "GET",
-            headers: { 'AUTHORIZATION': 'Token b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
+            headers: { 'Api-Key': 'KEY b42986345fd0c16cab19cda9f171ab7d6b1ade04'}
         });
 
         request.done(function(data) {
